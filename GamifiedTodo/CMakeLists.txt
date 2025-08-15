@@ -17,6 +17,10 @@ qt_add_qml_module(appGamifiedTodo
     VERSION 1.0
     QML_FILES
         Main.qml
+        SOURCES TimeBlockCategory.h TimeBlockCategory.cpp
+        SOURCES ScheduleTime.h ScheduleTime.cpp
+        SOURCES Task.h Task.cpp
+        SOURCES Habit.h Habit.cpp
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
