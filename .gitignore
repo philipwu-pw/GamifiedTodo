@@ -138,4 +138,9 @@ CMakeLists.txt.user*
 .pch/
 .rcc/
 .uic/
+out/
+.vs/
 /build*/
+
+CMakePresets.json
+CMakeUserPresets.json
