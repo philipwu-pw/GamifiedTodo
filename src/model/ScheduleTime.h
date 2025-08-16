@@ -7,11 +7,11 @@ class ScheduleTime
 {
 public:
     ScheduleTime();
-    void setHour(int hour);
+    bool setHour(int hour);
     int getHour();
-    void setMinute(int minute);
+    bool setMinute(int minute);
     int getMinute();
-    void setTime(std::array<int, 2> time);
+    bool setTime(std::array<int, 2> time);
     std::array<int, 2> getTime();
 
 private:

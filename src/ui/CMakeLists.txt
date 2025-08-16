@@ -1,8 +1,3 @@
-cmake_minimum_required(VERSION 3.16)
-
-project(GamifiedTodo VERSION 0.1 LANGUAGES CXX)
-
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(Qt6 REQUIRED COMPONENTS Quick)
 
@@ -37,11 +32,4 @@ set_target_properties(appGamifiedTodo PROPERTIES
 
 target_link_libraries(appGamifiedTodo
     PRIVATE Qt6::Quick
-)
-
-include(GNUInstallDirs)
-install(TARGETS appGamifiedTodo
-    BUNDLE DESTINATION .
-    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
-    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
