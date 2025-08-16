@@ -6,7 +6,9 @@
 class Habit : public Task
 {
 public:
-    Habit();
+    Habit(std::map<std::string, ScheduleTime> scheduled_time);
+    void updateStreak();
+    int getStreak();
 
 private:
     int streak;

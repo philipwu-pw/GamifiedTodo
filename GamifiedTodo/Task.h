@@ -8,7 +8,7 @@
 class Task
 {
 public:
-    Task();
+    Task(std::map<std::string, ScheduleTime> scheduled_time);
     void setLength(int length);
     void setTime(std::map<std::string, ScheduleTime> time);
     void setStartTime(ScheduleTime time);
@@ -17,8 +17,8 @@ public:
     bool getCompletionStatus();
 
 private:
-    std::map<std::string, ScheduleTime> active_time;
-    ScheduleTime length;
+    std::map<std::string, ScheduleTime> scheduled_time;
+    int length;
     bool completion_status;
 };
 
